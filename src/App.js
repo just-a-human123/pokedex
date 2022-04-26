@@ -1,9 +1,15 @@
 import './App.css';
+import Pokedex from './components/pokedex';
 
 function App() {
   return (
     <div className="App">
-      <div>Pokedex</div>
+      <Pokedex
+        id='5'
+        name='charmander'
+        type='fire'
+        exp='100'
+      />
     </div>
   );
 }
