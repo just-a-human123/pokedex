@@ -1,15 +1,22 @@
 import React from 'react';
+import data from '../data/mocks';
+import PokeCard from './pokecard'
 
-const Pokedex = ({name, id, type, exp}) => {
-    const PokeSprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-    return (
-        <div className={id}>
-            <h1>{name}</h1>
-            <img src={PokeSprite} alt={name}/>
-            <p>{type}</p>
-            <p>{exp}</p>
+const Pokedex = () => {
+  return(
+    <div>
+      {data.map((pokemon) => (
+        <div style={{display: 'gird'}}>
+          <PokeCard
+            id={pokemon.id}
+            name={pokemon.name}
+            type={pokemon.type}
+            exp={pokemon.base_experience}
+          />
         </div>
-    )
+      ))}
+    </div>
+  )
 }
 
-export default Pokedex;
+export default Pokedex
