@@ -8,6 +8,10 @@ export const PokeCardStyle = css`
     padding: 1rem;
     text-align: center;
     background-color: lightblue;
+    &:hover {
+        scale: 1.1;
+        opacity: 0.9;
+    }
 `;
 
 export const PokeDexStyle = css`
