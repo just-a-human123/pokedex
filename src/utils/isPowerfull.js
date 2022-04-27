@@ -1,0 +1,1 @@
+export const isPowerfull = (exp) => (exp >= 100 ? 'Strong' : 'Needs more experience');
