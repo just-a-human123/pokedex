@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
   color: darkslategrey;
+  background-image: url('https://images.nintendolife.com/cb6a25fab8f83/pokemon-grassy-gardening.large.jpg');
 }
 
 code {
